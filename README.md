@@ -55,14 +55,14 @@ Bar Chart: Displays the absolute number of wins for both sides.
 ## Plot: The temperature, the mean temperature each day and the mean temperature for each month
 
 ### Explanation
-1. Load the dataset: 
+1. Load the Dataset: 
 Loads the dataset from the given URL. Skips the first 23 rows, assuming they contain metadata or headers unrelated to the main data.
-2. Data conversion and processing:
+2. Data Conversion and Processing:
 Converts the date column from a string to a proper datetime format and removes time details (hour and minute) using `normalize()`.
-3. Temperature analysis: 
+3. Temperature Analysis: 
 Groups the data by year ('YE') and calculates the average temperature for each year, Creates a line plot showing the yearly average temperature over time.
 Groups the data by month ('ME') and calculates the average temperature for each month.
-4. Wind speed analysis:
+4. Wind Speed Analysis:
 Converts the wdsp (wind speed) column to numeric format. Non-numeric values are replaced with NaN. Treats zeros in the wdsp column as missing data by replacing them with NaN.
 Calculates the average wind speed for each year. Calculates the average wind speed for each month.
 5. Visualizations:
