@@ -4,7 +4,7 @@
 
 ### Explanation
 1. File Path and Variables:
-Setting up the file path and why variables like total_dryBulbTemperature_Celsius and count are needed.
+Setting up the file path and why variables like `total_dryBulbTemperature_Celsius` and count are needed.
 2. Reading Data:
 csv.DictReader uses the header row to identify columns, and check for the column `dryBulbTemperature_Celsius` before processing.
 3. Calculating Average:
