@@ -6,7 +6,7 @@
 1. File Path and Variables:
 Setting up the file path and why variables like total_dryBulbTemperature_Celsius and count are needed.
 2. Reading Data:
-csv.DictReader uses the header row to identify columns, and check for the column "dryBulbTemperature_Celsius" before processing.
+csv.DictReader uses the header row to identify columns, and check for the column `dryBulbTemperature_Celsius` before processing.
 3. Calculating Average:
 Calculate the average temperature by adding up all valid temperatures and dividing by the count.
 4. Visualizing Data:
@@ -20,13 +20,13 @@ If the file is missing (prints an error message).
 
 ### Explanation
 1. Dataset Loading:
-Data is fetched from an online CSV file and inspected using df.head().
+Data is fetched from an online CSV file and inspected using `df.head()`.
 2. Date Conversion:
 Converts the date strings to datetime objects for easier manipulation.
 3. Age Calculation:
 Calculates each person's age by comparing their birthdate to the current date and adjusts for birthdays that haven’t happened yet.
 4. Age Grouping:
-Bins ages into predefined ranges using pd.cut() and assigns labels for these groups.
+Bins ages into predefined ranges using `pd.cut()` and assigns labels for these groups.
 5. Visualization:
 Uses a pie chart to display the distribution of employees across age groups, with percentage labels for clarity.
 
@@ -42,9 +42,9 @@ The attacker rolls three dice, and the defender rolls two dice. Random rolls are
 2. Finding the Winners:
 The maximum value of each set of dice rolls is compared. If the attacker's max roll is higher, they win; otherwise, the defender wins.
 3. Tracking Results:
-The total wins for the attacker and defender are counted in attacker_wins and defender_wins.
+The total wins for the attacker and defender are counted in `attacker_wins` and `defender_wins`.
 4. Calculating Percentages:
-The win percentages are calculated as (wins / total battles) * 100.
+The win percentages are calculated as `(wins / total battles) * 100`.
 5. Visualizing Results:
 Pie Chart: Shows the percentage of wins for each side.
 Bar Chart: Displays the absolute number of wins for both sides.
@@ -58,13 +58,13 @@ Bar Chart: Displays the absolute number of wins for both sides.
 1. Load the dataset: 
 Loads the dataset from the given URL. Skips the first 23 rows, assuming they contain metadata or headers unrelated to the main data.
 2. Data conversion and processing:
-Converts the date column from a string to a proper datetime format and removes time details (hour and minute) using normalize().
+Converts the date column from a string to a proper datetime format and removes time details (hour and minute) using `normalize()`.
 3. Temperature analysis: 
 Groups the data by year ('YE') and calculates the average temperature for each year, Creates a line plot showing the yearly average temperature over time.
 Groups the data by month ('ME') and calculates the average temperature for each month.
 4. Wind speed analysis:
 Converts the wdsp (wind speed) column to numeric format. Non-numeric values are replaced with NaN. Treats zeros in the wdsp column as missing data by replacing them with NaN.
-Calculates the average wind speed for each year.Calculates the average wind speed for each month.
+Calculates the average wind speed for each year. Calculates the average wind speed for each month.
 5. Visualizations:
 Yearly Trends: Line plots of yearly averages show long-term trends for temperature and wind speed.
 Monthly Trends: Line plots of monthly averages highlight seasonal patterns.
