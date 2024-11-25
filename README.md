@@ -51,8 +51,7 @@ Bar Chart: Displays the absolute number of wins for both sides.
 
 ---
 
-## Task 6 - Create a python file or notebook called assignment_6_Weather (.py or .ipynb)
-## Get the data from this link (https://cli.fusio.net/cli/climate_data/webdata/hly4935.csv)
+## Task 6 - Create a python file or notebook called assignment_6_Weather (.py or .ipynb). Get the data from this link (https://cli.fusio.net/cli/climate_data/webdata/hly4935.csv)
 ## Plot: The temperature, the mean temperature each day and the mean temperature for each month
 
 ### Explanation
